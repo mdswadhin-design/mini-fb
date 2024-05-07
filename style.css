@@ -1,3 +1,7 @@
+:root{
+  --header-height:50px;
+}
+
 *{
   box-sizing: border-box;
 }
@@ -10,18 +14,37 @@ body{
 header {
  text-align: center;
  
- padding: 15px 10px;
+ height:var(--header-height);
  background-color: white;
  box-shadow: 0 0 10px 0px rgb(150, 149, 149);
+ position: sticky;
+ top: 0;
 }
 .main-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  
  
 }
 .left-sidebar, .right-sidebar{
   width: 25%;
+ 
+  
 }
 .main-containt{
   width: 35%;
+}
+.left-sidebar{
+  position: fixed;
+  left: 0;
+  top: var(--header-height);
+  background-color:khaki;
+  height: 100vh;
+}
+.right-sidebar{
+  position: fixed;
+  top: var(--header-height);
+  right: 0;
+  background-color: pink;
+  height: 100vh;
 }
