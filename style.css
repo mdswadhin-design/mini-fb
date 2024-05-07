@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #F0F2F5;
+}
+header {
+ text-align: center;
+ 
+ padding: 15px 10px;
+ background-color: white;
+ box-shadow: 0 0 10px 0px rgb(150, 149, 149);
+}
+.main-container{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.left-sidebar, .right-sidebar{
+  width: 25%;
+}
+.main-containt{
+  width: 35%;
+}
